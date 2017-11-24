@@ -86,12 +86,12 @@ http.createServer(function (req, res) {
 
         res.writeHead(200, {'Content-Type': 'text/html'});
         res.end(`
-            <h2>polygons triangles subsets: <code>[${trianglesArray}]</code></h2>
-            <h2>polygons squares subsets: <code>[${squaresArray}]</code></h2>
-            <h2>polygons rectangles subsets: <code>[${rectanglesArray}]</code></h2>
-            <h2>polygons others subsets: <code>[${othersArray}]</code></h2>
+            <h2>polygons triangles subsets: <pre>[${trianglesArray}]</pre></h2>
+            <h2>polygons squares subsets: <pre>[${squaresArray}]</pre></h2>
+            <h2>polygons rectangles subsets: <pre>[${rectanglesArray}]</pre></h2>
+            <h2>polygons others subsets: <pre>[${othersArray}]</pre></h2>
             <h2>The union of all four mutually Exclusive Subsets Polygons : <pre>[${mutuallyExclusiveSubsets}]</pre></h2>
-            <h2>The union Subsets length equal the Orginal Set length: <code>[${(mutuallyExclusiveSubsets.length ==  array.length )? true : false}]</code></h2>
+            <h2>The union Subsets length equal the Orginal Set length: <pre>${(mutuallyExclusiveSubsets.length ==  array.length )? true : false}</pre></h2>
         `);
     });
 
